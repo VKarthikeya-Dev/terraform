@@ -35,3 +35,19 @@ variable"sg_tag"{
         Name = "allow_all"
     }
 }
+
+variable"environment"{
+    default = "dev"
+}
+
+variable "instance_name"{
+    default = ["mongodb","redis","mysql","rabbitmq"]
+}
+
+variable "zone_id"{
+    default = "Z071068523JSF1PW7XXII"
+}
+
+variable"domain_name"{
+    default="vkdevops.site"
+}
