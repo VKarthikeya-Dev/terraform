@@ -9,7 +9,9 @@ terraform {
     bucket = "vk-remote-state"
     key    = "remote-state-demo"
     region = "us-east-1"
-    dynamodb_table ="vk-remote-state"
+    #dynamodb_table ="vk-remote-state"
+    encrypt = true
+    use_lockfile = true
   }
 }
 
