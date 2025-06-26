@@ -1,5 +1,5 @@
 resource "aws_instance" "Roboshop" {
-  ami                    = "ami-09c813fb71547fc4f"
+  ami                    = data.aws_ami.joindevops.id
   instance_type          = var.environment == "dev" ? "t3.micro" : "t3.small"
   vpc_security_group_ids = [aws_security_group.allow_all.id]
 
